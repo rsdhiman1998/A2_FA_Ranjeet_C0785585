@@ -24,7 +24,7 @@ class ProductVC: UITableViewController {
         loadProducts()
         searchBar.delegate = self
         self.navigationItem.rightBarButtonItem = self.editButtonItem
-       
+       headerLabel = "hello"
     }
     
     func loadProducts(predicate:NSPredicate? = nil ){
@@ -43,20 +43,42 @@ class ProductVC: UITableViewController {
             print (error)
         }
     }
+    
+    
+    var headerLabel = "ewrdf"
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+            let headerView = UIView.init(frame: CGRect.init(x: 0, y: 0, width: tableView.frame.width, height: 70))
+
+            let label = UILabel()
+            label.frame = CGRect.init(x: 20, y: -10, width: headerView.frame.width-10, height: headerView.frame.height-10)
+            label.text = headerLabel
+        label.font = UIFont.systemFont(ofSize: 24)
+
+
+            headerView.addSubview(label)
+
+            return headerView
+        }
+    
+    
+    override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.size.width, height: 50))
+        let label = UILabel()
+        label.frame = CGRect.init(x: 20, y: 10, width: footerView.frame.width-10, height: footerView.frame.height-10)
+        label.text = headerLabel
+    label.font = UIFont.systemFont(ofSize: 24)
+
+        footerView.backgroundColor = UIColor.blue
+        footerView.addSubview(label)
+        return footerView
+    }
+    
+  
 
     
  
     func addProduct(){
-        let Prodrequest: NSFetchRequest<NSFetchRequestResult> = Product.fetchRequest()
-        let delReq = NSBatchDeleteRequest(fetchRequest: Prodrequest)
-        
-        do{
-            try context.execute(delReq)
-            tableView.reloadData()
-        }catch{
-            print("Can not load data \(error.localizedDescription)")
-        }
-        
+
         let newProduct = Product(context: context)
         newProduct.prodName = "Oneplus Buds Pro"
         newProduct.prodId = 111

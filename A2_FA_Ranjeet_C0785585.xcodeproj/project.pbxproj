@@ -15,8 +15,9 @@
 		2D65169F25C6884600A6C8E7 /* A2_FA_Ranjeet_C0785585.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D65169D25C6884600A6C8E7 /* A2_FA_Ranjeet_C0785585.xcdatamodeld */; };
 		2D6516A125C6884700A6C8E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6516A025C6884700A6C8E7 /* Assets.xcassets */; };
 		2D6516A425C6884700A6C8E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D6516A225C6884700A6C8E7 /* LaunchScreen.storyboard */; };
-		2D6516BD25C68FB100A6C8E7 /* ProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6516BC25C68FB100A6C8E7 /* ProductVC.swift */; };
 		2DDBC57425C728A800B455AA /* ProductDescViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDBC57325C728A800B455AA /* ProductDescViewController.swift */; };
+		C932C30C25C874480033FDA5 /* ProviderProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C932C30B25C874480033FDA5 /* ProviderProductsViewController.swift */; };
+		C9F1114125C82D5F00A2443C /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F1114025C82D5F00A2443C /* ProductViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +31,9 @@
 		2D6516A025C6884700A6C8E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D6516A325C6884700A6C8E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D6516A525C6884700A6C8E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D6516BC25C68FB100A6C8E7 /* ProductVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductVC.swift; sourceTree = "<group>"; };
 		2DDBC57325C728A800B455AA /* ProductDescViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDescViewController.swift; sourceTree = "<group>"; };
+		C932C30B25C874480033FDA5 /* ProviderProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderProductsViewController.swift; sourceTree = "<group>"; };
+		C9F1114025C82D5F00A2443C /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +75,10 @@
 				2D6516A225C6884700A6C8E7 /* LaunchScreen.storyboard */,
 				2D6516A525C6884700A6C8E7 /* Info.plist */,
 				2D65169D25C6884600A6C8E7 /* A2_FA_Ranjeet_C0785585.xcdatamodeld */,
-				2D6516BC25C68FB100A6C8E7 /* ProductVC.swift */,
 				2DDBC57325C728A800B455AA /* ProductDescViewController.swift */,
 				2D3A672C25C7E7F8004A2E93 /* AddProductViewController.swift */,
+				C9F1114025C82D5F00A2443C /* ProductViewController.swift */,
+				C932C30B25C874480033FDA5 /* ProviderProductsViewController.swift */,
 			);
 			path = A2_FA_Ranjeet_C0785585;
 			sourceTree = "<group>";
@@ -161,8 +164,9 @@
 				2D3A672D25C7E7F8004A2E93 /* AddProductViewController.swift in Sources */,
 				2D65169925C6884600A6C8E7 /* ViewController.swift in Sources */,
 				2D65169525C6884600A6C8E7 /* AppDelegate.swift in Sources */,
-				2D6516BD25C68FB100A6C8E7 /* ProductVC.swift in Sources */,
 				2D65169725C6884600A6C8E7 /* SceneDelegate.swift in Sources */,
+				C932C30C25C874480033FDA5 /* ProviderProductsViewController.swift in Sources */,
+				C9F1114125C82D5F00A2443C /* ProductViewController.swift in Sources */,
 				2DDBC57425C728A800B455AA /* ProductDescViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
